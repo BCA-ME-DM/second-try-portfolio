@@ -1,0 +1,530 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    background: transparent;
+    position: relative;
+}
+
+
+.background{
+    z-index: 0;
+    background: black;
+    position: fixed;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+.navbar{
+    z-index: 5;
+    background: transparent;
+    max-width: 100%;
+    max-height: 8vh;
+    position: absolute;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.navbar .port a{
+    position: absolute;
+    left: 10vh;
+    top: 7px;
+    background: transparent;
+    border-radius: 19px;
+    box-shadow: inset  1px 2px 5px 1px gray;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    font-size: 3vh;
+}
+
+
+.navbar h1{
+   z-index: 6;
+   position: absolute;
+   left: 2px;
+   font-size: 3vh;
+   background: red;
+   border-radius: 5px;
+   box-shadow: 5px 3px 10px 1px black;
+}
+
+
+
+.navbar ul{
+   background:transparent;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: fixed;
+   right: 2px;
+}
+
+.navbar ul li{
+    background:transparent;
+    position: relative;
+    display: flex;
+    list-style: none;
+    padding: 10px;
+   
+}
+
+
+.navbar ul li a{
+    background: transparent;
+    border-radius: 19px;
+    box-shadow: inset  1px 2px 5px 1px gray;
+    max-height: 2vh;
+    padding: 8px;
+    text-decoration: none;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+    
+}
+
+
+
+.first-page{
+    max-height: 110vh;
+    width: 100%;
+    position: relative;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+
+.first-page .frontName{
+    background: transparent;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-page .frontName h1{
+    position: relative;
+    font-size: 12vi;
+    font-weight: 1000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+}
+
+
+.first-page .frontNameStroke{
+    z-index: 3;
+    background: transparent;
+    max-width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-page .frontNameStroke h1{
+    position: relative;
+    font-size: 12vi;
+    font-weight: 1000;
+    color: transparent;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-text-stroke: 0.5vh #fff;
+}
+
+
+.bg-img{
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    max-height: 90%;
+    background: transparent;
+}
+.bg-img img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.first-page .circle{
+    position: absolute;
+    bottom: -30vh;
+    left: -15vh;
+    background: linear-gradient(rgb(46, 176, 227) 40%,rgb(54, 96, 160));
+    max-height: 60vh;
+    max-width: 60vh;
+    border-radius: 50%;
+    animation: pop 15s infinite;
+}
+
+
+
+
+
+
+
+.second-page{
+    max-height: 100vh;
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    overflow: hidden;
+}
+
+
+
+.second-page .circle-1{
+    position: absolute;
+    top: -30vh;
+    left: -15vh;
+    background: linear-gradient(rgb(46, 176, 227) 40%,rgb(54, 96, 160));
+    max-height: 60vh;
+    max-width: 60vh;
+    border-radius: 50%;
+    animation: pop 15s infinite;
+}
+@keyframes pop{
+    0%{
+        scale: 1;
+    }
+
+    25%{
+        scale: 1.1;
+    }
+
+    50%{
+        scale: 0.8;
+    }
+    
+    75%{
+        scale: 1.1;
+    }
+
+    100%{
+        scale: 1;
+    }
+}
+
+
+.second-page .circle-2{
+    position: absolute;
+    bottom: 1vh;
+    right: -55vh;
+    background: linear-gradient(rgb(116, 44, 44),rgb(225, 0, 255));
+    max-height: 80vh;
+    max-width: 80vh;
+    border-radius: 50%;
+    animation: pop 13s infinite;
+}
+
+
+.second-page .trans-card-1{
+    transform:  perspective(400px) translateY(5%) rotateY(4deg) translateZ(0);
+    background: rgba(255, 255, 255, 0.1);
+    border-top: 3.5px solid rgba(255, 255, 255, 0.1);
+    border-left: 3.5px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    max-width: 30vw;
+    max-height: 56vh;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    animation: card-move 10s infinite;
+    padding: 5px;
+}
+
+@keyframes card-move{
+    0%{
+       
+        height: 56vh;
+        transform:  perspective(400px) translateY(5%) rotateY(10deg) translateZ(0);
+    }
+
+    50%{
+       
+        height: 56vh;
+        transform:  perspective(400px) translateY(5%) rotateY(-10deg) translateZ(0);
+    }
+
+    100%{
+       
+        height: 56vh;
+        transform:  perspective(400px) translateY(5%) rotateY(10deg) translateZ(0);
+    }
+}
+
+
+.second-page .trans-card-1 .hading{
+    color: grey;   
+    position: absolute;
+    top: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.second-page .trans-card-1 .pera{
+    color: grey;   
+    position: absolute;
+    background: transparent;
+    max-height: 80%;
+    overflow: hidden;
+    margin: 5px;
+    top: 45px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.third-page{
+    max-height: 100vh;
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    overflow: hidden;
+}
+.third-page .circle-1{
+    position: absolute;
+    top: 10vh;
+    left: 2vw;
+    background: linear-gradient(rgb(209, 227, 46) 40%,rgb(146, 54, 160));
+    max-height: 10vh;
+    max-width: 10vh;
+    border-radius: 50%;
+    animation: pop 15s infinite;
+}
+@keyframes pop{
+    0%{
+        scale: 1;
+    }
+
+    25%{
+        scale: 1.1;
+    }
+
+    50%{
+        scale: 0.8;
+    }
+    
+    75%{
+        scale: 1.1;
+    }
+
+    100%{
+        scale: 1;
+    }
+}
+
+
+.third-page .circle-2{
+    position: absolute;
+    top: 5vh;
+    right: 2vw;
+    background: linear-gradient(rgb(24, 168, 234),rgb(142, 106, 147));
+    max-height: 50vh;
+    max-width: 50vh;
+    border-radius: 50%;
+    animation: pop 13s infinite;
+}
+.third-page .circle-3{
+    position: absolute;
+    top: 10vh;
+    left: 20vw;
+    background: linear-gradient(rgb(10, 74, 84),rgb(205, 0, 232));
+    max-height: 36vh;
+    max-width: 36vh;
+    border-radius: 50%;
+    animation: pop 13s infinite;
+}
+.third-page .circle-4{
+    position: absolute;
+    bottom: 1vh;
+    left: 5vw;
+    background: linear-gradient(rgb(67, 63, 24),rgb(209, 153, 162));
+    max-height: 40vh;
+    max-width: 40vh;
+    border-radius: 50%;
+    animation: pop 13s infinite;
+}
+.third-page .circle-5{
+    position: absolute;
+    bottom: 20vh;
+    right: 40vw;
+    background: linear-gradient(rgb(208, 220, 225),rgb(46, 191, 162));
+    max-height: 20vh;
+    max-width: 20vh;
+    border-radius: 50%;
+    animation: pop 13s infinite;
+}
+.third-page .circle-6{
+    position: absolute;
+    bottom: 1vh;
+    right: 20vw;
+    background: linear-gradient(rgb(24, 234, 59),rgb(152, 115, 80));
+    max-height: 15vh;
+    max-width: 15vh;
+    border-radius: 50%;
+    animation: pop 13s infinite;
+}
+
+.container{
+    max-width: 100px;
+    max-height: 100px;
+    perspective: 400px;
+    background-color: transparent;
+    transition: 1s;
+    z-index: 4;
+}
+
+.cube{
+    transition: 2s;
+    background-color: transparent;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg);
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin{
+    0% { 
+        transform: rotateX(0deg) rotateY(0deg); 
+    }
+    100% {
+         transform: rotateX(360deg) rotateY(360deg); 
+        }
+}
+.cube-face{
+    border: 1px solid #000;
+    position: absolute;
+    max-width: 100px;
+    max-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0%;
+    z-index: 9;
+    background-color: #fff;
+    overflow: hidden;
+}
+.cube-face h1{
+    color: #fff;
+}
+.front {
+    transform: translateZ(51px);
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(51px);
+}
+
+.back {
+    transform: rotateY(180deg) translateZ(51px);
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(51px);
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(51px);
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(51px);
+}
+
+.container:hover{
+    max-width: 90vw;
+    max-height: 90vh;
+        padding: 10px;
+        perspective: 400px;
+        background: transparent;
+        border-top: 3.5px solid rgba(255, 255, 255, 0.1);
+        border-left: 3.5px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+        transition: 1s;
+        z-index: 4;
+        display: flex;
+
+    .cube-face{
+        transition: 1s;
+        margin: 10px;
+        border: red;
+        height: 20vh;
+        width: 20vh;
+        border-radius: 10px;
+    }
+    .cube{
+        background-color: transparent;
+        max-width: 100%;
+        max-height: 100%;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        transform: rotateX(0deg) rotateY(0deg);
+        animation:  10s linear infinite;
+    }
+    .front {
+       position: relative;
+       transform: rotateY(0deg) translateZ(0px);
+    }
+    
+    .right {
+      transform: rotateY(0deg) translateZ(0px);
+      position: relative;
+    }
+    
+    .back {
+        transform: rotateY(0deg) translateZ(0px);
+        position: relative;
+    }
+    
+    .left {
+        transform: rotateY(0deg) translateZ(0px);
+        position: relative;
+    }
+    
+    .top {
+        transform: rotateY(0deg) translateZ(0px);
+        position: relative;
+    }
+    
+    .bottom {
+        transform: rotateY(0deg) translateZ(0px);
+        position: relative;
+    }
+}
+
+
+.fourth-page{
+    max-height: 100vh;
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: red;
+    overflow: hidden;
+}
+

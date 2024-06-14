@@ -21,7 +21,7 @@ body{
 
 .navbar{
     z-index: 5;
-    background: transparent;
+    background: red;
     max-width: 100%;
     max-height: 8vh;
     position: absolute;
@@ -50,7 +50,7 @@ body{
    z-index: 6;
    position: absolute;
    left: 2px;
-   font-size: 3vh;
+   font-size: 10px;
    background: red;
    border-radius: 5px;
    box-shadow: 5px 3px 10px 1px black;
@@ -96,7 +96,7 @@ body{
 
 .first-page{
     max-height: 110vh;
-    width: 100%;
+    width: 100vw;
     position: relative;
     background: transparent;
     display: flex;
@@ -109,7 +109,7 @@ body{
 
 .first-page .frontName{
     background: transparent;
-    width: 100%;
+    width: 100vw;
     position: absolute;
     display: flex;
     align-items: center;
